@@ -1,4 +1,4 @@
-# BIGTREETECH CB1 Setup on Sovol SV08
+# SV08 mainline prebuilt image
 
 This image aims to provide a prebuilt "mainline" solution for the SV08, it has Klipper and all nessecary components to maintain feature parity with the standard firmware image but has some additional nicieites in the way of config tweaks (updated stepper driver config, variable speed fan config, macro changes etc). but the biggest change is I've made Fluidd the default web interface as I find it just that little bit nicer and easier to use, but Mainsail is still there running on port 81.
 
