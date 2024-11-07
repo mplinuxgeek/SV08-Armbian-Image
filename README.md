@@ -1,5 +1,7 @@
 # BIGTREETECH CB1 Setup on Sovol SV08
 
+This image aims to provide a prebuilt "mainline" solution for the SV08, it has Klipper and all nessecary components to maintain feature parity with the standard firmware image but has some additional nicieites in the way of config tweaks (updated stepper driver config, variable speed fan config, macro changes etc). but the biggest change is I've made Fluidd the default web interface as I find it just that little bit nicer and easier to use, but Mainsail is still there running on port 81.
+
 ## Process:
 
 1. **Flashed SD card** with the official Armbian BIGTREETECH CB1 image:
@@ -46,3 +48,6 @@
   - Enable ADXL configuration. 
     - Note: Requires MCU firmware update, so the Katapult bootloader installation is needed.
     - An updated `Klipper.bin` will be installed, but `printer.cfg` will have ADXL support commented out by default. Users can uncomment if their MCU firmware is updated.
+
+NOTE:
+This will work sith stock mainboard and toolhead MCU firmware however the current version of Klipper (as of November 7 2024) will throw an error relating to the ADXL config sections so if you haven't updated the MCU firmware then you will need to comment out the [adxl345] and [resonance_tester] sections in printer.cfg and restart Klipper.
