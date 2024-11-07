@@ -38,7 +38,6 @@
   
 - **Hardware Testing**:
   - Test original LCD.
-  - Test WiFi.
   
 - **Display Adjustments**:
   - Find a solution to rotate HDMI output 180 degrees to align with the original firmware display orientation, ensuring compatibility with existing or printed LCD mounts.
