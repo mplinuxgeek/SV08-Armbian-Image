@@ -6,7 +6,7 @@ This image aims to provide a prebuilt "mainline" solution for the SV08, it has K
 - eMMC does work but not with the standard 8GB eMMC, however is working fine on a 32GB eMMC.
 - To use this image with stock mainboard and toolhead MCU firmware, be aware that the current Klipper version (as of November 7, 2024) will throw an error with the [adxl345] and [resonance_tester] sections in printer.cfg. If your MCU firmware isn’t updated, comment out these sections and restart Klipper. This will disable input shaper resonance testing, but input shaping will still function with configured values.
 
-It is reccomended to pdate the MCU firmware for full functionality!
+It is recommended to pdate the MCU firmware for full functionality!
 
 # Installation Guide for SV08 Armbian Image
 
