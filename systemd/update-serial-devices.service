@@ -1,0 +1,10 @@
+[Unit]
+Description=Update Serial Devices in printer.cfg
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/update_serial_devices.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
